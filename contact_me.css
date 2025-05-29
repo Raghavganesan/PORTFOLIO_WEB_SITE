@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -87,93 +87,4 @@ a:hover {
 .contact-box:active {
   transform: scale(1.2);
 }
-=======
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(to bottom right, #e6f9da, #d1f4d8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-out forwards;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.contact-box {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 20px 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 90%;
-  margin-top: 60px;
-}
-.contact-box h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #2d2d2d;
-}
-.contact-item {
-  margin: 15px 0;
-  font-size: 16px;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.label {
-  font-weight: 600;
-  color: #222;
-}
-.value {
-  font-weight: 500;
-  color: #4caf50;
-  word-break: break-word;
-  text-decoration: none;
-}
-.value:hover {
-  text-decoration: underline;
-}
-a {
-  color: #4caf50;
-  text-decoration: none;
-  font-weight: 500;
-}
 
-a:hover {
-  text-decoration: underline;
-}
-
-.contact-box:active {
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
-.contact-box {
-  transition: transform 0.2s ease;
-}
-.contact-box:hover,
-.contact-box:active {
-  transform: scale(1.2);
-}
->>>>>>> 53fda845f64cf08cd5904a6018b1c45f60a1f089
