@@ -8,24 +8,29 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="main_page.css" />
-    <script>
-  
-
-</script>
-
+    <script></script>
   </head>
-  
 
   <body>
-   <button class="theme-toggle" id="themeToggle" type="button">
+    <div id="top"></div>
+    <button class="theme-toggle" id="themeToggle" type="button">
       <span class="theme-icon">🌙</span>
       <span class="theme-label">Dark mode</span>
-</button>
+    </button>
 
     <section class="intro">
       <h1>Hi I'm Raghavendran Ganesan</h1>
-      
+
       <img src="assests/profile.jpg" class="profile-pic" alt="" />
       <div class="about-me">
         <p>
@@ -38,7 +43,7 @@
           with modern tech to build impactful, real-world solutions.
         </p>
       </div>
-      <a href="#cards" class="scroll-down">↓ Scroll down</a>
+      <a href="#" class="scroll-down" id="scrollLink">↓ Scroll down</a>
     </section>
 
     <section class="cards-section" id="cards">
@@ -66,6 +71,18 @@
           <a href="projects.html" class="btn">Explore</a>
         </div>
 
+        <div class="card education offset-small">
+          <h3>🎓 Education</h3>
+          <p>My academic journey & achievements.</p>
+          <a href="education.html" class="btn">View</a>
+        </div>
+
+        <div class="card internships offset-large">
+          <h3>🛠️ Internships</h3>
+          <p>Hands-on experience & impact.</p>
+          <a href="internships.html" class="btn">View</a>
+        </div>
+
         <div class="card contact offset-small">
           <h3>📬Contact Info</h3>
           <p>Reach out to me via email or linkedin</p>
@@ -73,13 +90,14 @@
         </div>
       </div>
     </section>
-    
-    <a href="#top" class="scroll-down" style="margin-bottom: 20px"
+
+    <a href="#  " class="scroll-down" style="margin-bottom: 20px"
       >↑ Back to Top</a
     >
     <footer class="site-footer">
-      <p>&copy; 2025 Raghavendran Ganesan &bull; Built using HTML and CSS</p>
+      <p>&copy; 2025 Raghavendran Ganesan &bull; Built using HTML + CSS + JavaScript</p>
     </footer>
     <script src="theme.js"></script>
+    <script src="scroll_feature.js"></script>
   </body>
 </html>
