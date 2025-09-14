@@ -224,6 +224,28 @@ section h2 {
     border-radius: 18px;
   }
 }
+/* ===== Footer Styling ===== */
+.site-footer {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: #ccefd5;   /* light green */
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 60px;
+  border-top: 1px solid #b2dfb3;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.05); /* subtle shadow at top */
+}
+
+/* Dark mode footer */
+.darkback .site-footer {
+  background-color: #1a1a1a;
+  color: #aaaaaa;
+  border-top: 1px solid #333;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.4);
+}
+
 
 @media (max-width: 480px) {
   .hero {
