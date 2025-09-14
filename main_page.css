@@ -87,7 +87,6 @@ h1 {
   font-weight: 700;
   color: #1b5e20;
   background: linear-gradient(90deg, #2e7d32, #1b5e20);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .about-me p {
