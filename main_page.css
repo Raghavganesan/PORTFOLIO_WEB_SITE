@@ -4,13 +4,11 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #e6f9da;
-  text-align: center;
   background: linear-gradient(to bottom right, #e6f9da, #d1f4d8);
+  text-align: center;
 }
 
-/*About Me*/
-
+/* About Me */
 .intro {
   margin-top: 20px;
   min-height: 60vh;
@@ -42,8 +40,9 @@ h1 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-out forwards;
+  text-wrap: balance;
+  letter-spacing: 0.2px;
 }
-
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -55,50 +54,45 @@ h1 {
   animation: fadeInUp 1s ease-out forwards;
   animation-delay: 0.3s;
 }
-
 .intro p {
   font-size: 18px;
   color: #444;
 }
+
 .about-me {
   max-width: 600px;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(10px);
   padding: 25px 30px;
   margin-top: 30px;
   border-radius: 16px;
-  font-size: 18px;
-  color: #2d2d2d;
-  line-height: 1.6;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: justify;
+  letter-spacing: 0.25px;
+  color: #2d3748;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #cdeccd, #d1f4d8) border-box;
+  border: 1px solid rgba(46, 125, 50, 0.15);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
   animation: zoomInAbout 0.8s ease-out forwards;
   opacity: 0;
   transform: scale(0.8);
   animation-delay: 0.6s;
 }
-.about-me {
-  border: 1px solid rgba(46, 125, 50, 0.15);
-  background: linear-gradient(#fff, #fff) padding-box,
-  linear-gradient(135deg, #cdeccd, #d1f4d8) border-box;
-  border-radius: 16px;
-}
-.about-me em,
-.about-me strong {
-  font-weight: 700;
-  color: #1b5e20;
-  background: linear-gradient(90deg, #2e7d32, #1b5e20);
-  -webkit-text-fill-color: transparent;
-}
 .about-me p {
-  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #1b5e20;
 }
-.about-me {
-  font-size: 17px;
-  line-height: 1.8;
-  color: #2d3748;
-  letter-spacing: 0.25px;
-  font-weight: 300;
-  text-align: justify;
+.about-me p::first-letter {
+  font-size: 28px;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  padding-right: 6px;
+  color: #2e7d32;
 }
 .about-me strong {
   font-weight: 600;
@@ -108,25 +102,6 @@ h1 {
 .about-me em {
   font-style: italic;
   color: #1b5e20;
-}
-.about-me p {
-  font-weight: 600;
-  font-size: 18px;
-  color: #1b5e20;
-}
-
-.about-me p::first-letter {
-  font-size: 28px;
-  font-weight: bold;
-  float: left;
-  line-height: 1;
-  padding-right: 6px;
-  color: #2e7d32;
-}
-
-.intro h1 {
-  text-wrap: balance;
-  letter-spacing: 0.2px;
 }
 
 @keyframes zoomInAbout {
@@ -140,7 +115,7 @@ h1 {
   }
 }
 
-/* Different Cards */
+/* Cards */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -148,12 +123,6 @@ h1 {
   max-width: 1100px;
   margin: 40px auto;
   padding: 0 16px;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
-  border-color: rgba(46, 125, 50, 0.25);
 }
 .card {
   width: 100%;
@@ -173,15 +142,14 @@ h1 {
 .card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  border-color: rgba(46, 125, 50, 0.25);
 }
-
 .card h3 {
-  font-family: "Dancing Script", cursive; /* <— your requested font */
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
   font-size: clamp(22px, 2.2vw, 30px);
   line-height: 1.1;
   margin: 6px 0 14px;
-  position: relative;
 }
 .card h3::after {
   content: "";
@@ -193,40 +161,6 @@ h1 {
   background: linear-gradient(90deg, #2e7d32, #56c271);
   opacity: 0.25;
 }
-.card p {
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #374151;
-  letter-spacing: 0.3px;
-  font-weight: 400;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-}
-.card p strong {
-  color: #2e7d32;
-  font-weight: 600;
-  background: linear-gradient(90deg, #2e7d32, #56c271);
-}
-.card p em {
-  font-style: italic;
-  color: #1b5e20;
-}
-.card p {
-  position: relative;
-  padding-top: 8px;
-}
-.card p::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 2px;
-  background: rgba(46, 125, 50, 0.3);
-  border-radius: 2px;
-}
-
 .card h3 .title-icon {
   font-style: normal;
   display: inline-flex;
@@ -239,19 +173,43 @@ h1 {
   background: rgba(46, 125, 50, 0.1);
   box-shadow: inset 0 0 0 1px rgba(46, 125, 50, 0.12);
 }
+.card p {
+  position: relative;
+  padding-top: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #374151;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.card p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background: rgba(46, 125, 50, 0.3);
+  border-radius: 2px;
+}
+.card p strong {
+  color: #2e7d32;
+  font-weight: 600;
+  background: linear-gradient(90deg, #2e7d32, #56c271);
+}
+.card p em {
+  font-style: italic;
+  color: #1b5e20;
+}
 .cards-section {
   margin-top: 100px;
   padding: 40px 0;
 }
 
-.offset-small {
-  margin-top: 20px;
-}
-.offset-large {
-  margin-top: 40px;
-}
-
-/*FOOTER */
+/* Footer */
 .site-footer {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -264,8 +222,7 @@ h1 {
   border-top: 1px solid #b2dfb3;
 }
 
-/* THEME TOGGLE BUTTON */
-
+/* Theme Toggle */
 .theme-toggle {
   position: fixed;
   top: 14px;
@@ -295,27 +252,20 @@ h1 {
   box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.35), 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* FOR BUTTONS */
-.btn {
-  background: linear-gradient(135deg, #43a047, #2e7d32);
-  border: none;
-}
-.btn:hover {
-  background: linear-gradient(135deg, #2e7d32, #1b5e20);
-  transform: translateY(-2px);
-}
-
+/* Buttons */
 .btn {
   padding: 10px 18px;
-  background-color: #2e7d32;
   color: white;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: none;
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .btn:hover {
-  background-color: #1b5e20;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  transform: translateY(-2px);
 }
 
 .scroll-down {
@@ -347,8 +297,27 @@ h1 {
   text-decoration: underline;
 }
 
-/* FOR DARK THEME TOGGLE */
-
+/* Dark Theme */
+.darkback {
+  background: #121212;
+  color: #dcdcdc;
+}
+.darkback h1,
+.darkback h2,
+.darkback h3 {
+  color: #ffffff;
+}
+.darkback p,
+.darkback .about-me {
+  color: #dcdcdc;
+}
+.darkback .about-me,
+.darkback .card,
+.darkback .contact-section {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
 .darkback .card {
   background: #161616;
   border-color: rgba(255, 255, 255, 0.06);
@@ -364,42 +333,16 @@ h1 {
 .darkback .card p {
   color: #c7cfd6;
 }
-
-.darkback {
-  background: #121212;
-  color: #dcdcdc;
-}
-
-.darkback h1,
-.darkback h2,
-.darkback h3 {
-  color: #ffffff;
-}
-
-.darkback p,
-.darkback .about-me {
-  color: #dcdcdc;
-}
-.darkback .about-me,
-.darkback .card,
-.darkback .contact-section {
-  background: #1e1e1e;
-  color: #dcdcdc;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
 .darkback .btn,
 .darkback .scroll-down {
   background-color: #2ecc71;
   color: #ffffff;
   font-weight: bold;
 }
-
 .darkback .btn:hover,
 .darkback .scroll-down:hover {
   background-color: #27ae60;
 }
-
 .darkback .site-footer {
   background-color: #1a1a1a;
   color: #aaaaaa;
@@ -420,7 +363,6 @@ h1 {
 .darkback .contact-form textarea::placeholder {
   color: #9aa0a6;
 }
-
 .darkback .contact-form button {
   background-color: #2ecc71;
 }
@@ -428,8 +370,7 @@ h1 {
   background-color: #27ae60;
 }
 
-/* SCREEN RESPONSIVENESS */
-
+/* Responsiveness */
 @media (max-width: 600px) {
   .card-container {
     flex-direction: column;
